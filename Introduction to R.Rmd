@@ -1,0 +1,131 @@
+---
+title: "Introduction to R"
+author: "Didian Nzally"
+date: "2024-07-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Basic Arithmetic Operations
+
+What is R?
+
+R is a powerful programming language and environment primarily used for statistical computing and graphics. 
+
+
+Why learn R
+
+1. Versatile
+2. Rich ecosystem of packages and libraries
+3. Open source
+4. High quality visualization
+
+```{r}
+# Basic arithmetic operations
+2 + 2       # Addition
+5 - 3       # Subtraction
+4 * 3       # Multiplication
+10 / 2      # Division
+10 %% 3     # Modulus
+2^3         # Exponentiation
+
+```
+
+
+```{r}
+
+
+```
+
+
+## 2. Variables and Data Types
+
+
+```{r}
+# Assigning values to variables
+
+#Use <- to assign a value to a variable
+x <- 5
+y <- "Hello, world!"
+z <- TRUE
+
+# Checking data types
+class(x)    # Numeric
+class(y)    # Character
+class(z)    # Logical
+
+```
+
+
+
+```{r}
+
+
+```
+
+
+## 3. Data Structures
+
+
+```{r}
+
+# Vector: It is a sequence of elements of the same basic type.
+# Note: Values of the same data type can be in a vector..
+
+# Numeric, similar to the int and float data types in python. 
+numeric_vector <- c(1.2, 2.4, 3.6) 
+print(numeric_vector)
+
+# Character, similar to the string data type in python.
+character_vector <- c("James", "May", "Tania") 
+print(character_vector)
+
+# Logical, similar to the boolean in python.
+logical_vector <- c(TRUE, FALSE, TRUE) 
+print(logical_vector)
+
+```
+
+```{r}
+
+# List: It is collection of values of different datatypes. It can contain vectors, matrices, data frames, and other lists.
+
+#Use the list function.
+my_list <- list(name = "Linz", age = 25, scores = TRUE) 
+
+# Use the print function to print any given value(s) assigned to a variable, similar to python.
+print(my_list)
+
+
+```
+
+```{r}
+
+# Matrix: A matrix is a two-dimensional, homogeneous data structure.
+
+# Fist parameter in the matrix function indicates the range of number 1:4, nrow indicates the number of rows and ncol indicates the number of columns
+matrix_data <- matrix(1:4, nrow = 2, ncol = 2) 
+
+# Use the print function to print any given value(s) assigned to a variable, similar to python.
+print(matrix_data) 
+
+```
+
+```{r}
+
+# Matrix: A matrix is a two-dimensional, heterogeneous data structure where elements are store in each column.
+
+#Create a data frame using the data.frame function. Note, there are two vectors in the data.frame function with different data types each representing a distinct column.
+df <- data.frame(Name = c("John", "Doe"), Age = c(25, 30))
+
+# Use the print function to print any given value(s) assigned to a variable, similar to python.
+print(df)
+
+```
+
+These are the basic data structures you will mostly be working with. 
+
+Regardless, find time to study the array and factor data structues..
