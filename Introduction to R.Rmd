@@ -35,11 +35,6 @@ Why learn R
 ```
 
 
-```{r}
-
-
-```
-
 
 ## 2. Variables and Data Types
 
@@ -59,12 +54,6 @@ class(z)    # Logical
 
 ```
 
-
-
-```{r}
-
-
-```
 
 
 ## 3. Data Structures
